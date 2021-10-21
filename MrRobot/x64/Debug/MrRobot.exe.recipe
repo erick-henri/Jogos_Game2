@@ -2,15 +2,15 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\erick\Desktop\GravityGuy\x64\Debug\MrRobot.exe</FullPath>
+      <FullPath>C:\Users\erick\Desktop\GravityGuy\MrRobot\x64\Debug\MrRobot.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles>
     <ContentFile>
-      <FullPath>C:\Users\erick\Desktop\GravityGuy\MrRobot\Shaders\Pixel.cso</FullPath>
+      <FullPath>C:\Users\erick\Desktop\GravityGuy\MrRobot\MrRobot\Shaders\Pixel.cso</FullPath>
     </ContentFile>
     <ContentFile>
-      <FullPath>C:\Users\erick\Desktop\GravityGuy\MrRobot\Shaders\Vertex.cso</FullPath>
+      <FullPath>C:\Users\erick\Desktop\GravityGuy\MrRobot\MrRobot\Shaders\Vertex.cso</FullPath>
     </ContentFile>
   </ContentFiles>
   <SatelliteDlls />

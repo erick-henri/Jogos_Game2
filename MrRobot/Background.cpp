@@ -19,6 +19,8 @@ Background::Background(uint type)
     }
 
     // carrega imagens
+    gameFont = new Font("Resources/Font2.png");
+    gameFont->Spacing(13);
 
     img = new Image("Resources/Vida.png");
     life = new Sprite(img);
@@ -36,6 +38,7 @@ Background::Background(uint type)
 
 Background::~Background()
 {
+    delete gameFont;
     delete img;
     delete back1;
     delete back2;
@@ -57,7 +60,7 @@ void Background::Update()
 
     // move sprites com velocidades diferentes
     xF -= velx * gameTime;
-    Xn -= velx * gameTime;
+    Xn -= 100 * gameTime;
     anim->NextFrame();
 }
 
@@ -68,7 +71,7 @@ void Background::Draw()
     // Carrega as posições dos sprites de background
     level->Draw(Xn+600, 400,Layer::FRONT);
 
-
+    gameFont->Draw(Xn+200, 150, "Pressione espaço para pular para chegar ao fim do nivel e avançar");
     life->Draw(64, 64, Layer::UPPER);
     anim->Draw(window->CenterX(), window->CenterY() + 280, Layer::FRONT);
 

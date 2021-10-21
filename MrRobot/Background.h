@@ -7,6 +7,7 @@
 #include "Object.h"                     // interface de Object
 #include "Sprite.h"                     // background é composto por sprites
 #include "animation.h"
+#include "Font.h"
 
 // ---------------------------------------------------------------------------------
 enum LEVEL { NIVEL1,NIVEL11,NIVEL2,NIVEL22 };
@@ -14,6 +15,7 @@ enum LEVEL { NIVEL1,NIVEL11,NIVEL2,NIVEL22 };
 class Background : public Object
 {
 private:
+    
     float xF;                       // posição horizontal dos sprites
     Image* img;                     // imagem de fundo frontal
     Sprite* back1;                  // Primeira imagem de fundo
@@ -22,6 +24,7 @@ private:
     Sprite* level;                  // Sprite para mostrar o nivel atual
     TileSet* tileset;                // folha de sprites do personagem
     Animation* anim;                   // animação do personagem
+    Font * gameFont;
     int velx;
     float Xn;
 
